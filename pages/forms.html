@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Font Awsome-->
+</head>
+<style>
+    /* Add custom CSS styles for better appearance */
+    label 
+    {
+        font-weight: bold;
+    }
+
+    .form-group 
+    {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    textarea 
+    {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] 
+    {
+        background-color: #ff8800;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover 
+    {
+        background-color: #73c01c;
+    }
+
+    .required-field::before 
+    {
+        content: "*";
+        color: red;
+    }
+
+    #container 
+    {
+        text-align: center;
+        /* Center content inside the container */
+    }
+
+    .social-menu 
+    {
+        margin-top: 20px;
+    }
+
+    .social-icon 
+    {
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="menu">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+                    class="social-icon">
+                    <i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+                </a>
+
+                <a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+                    target="_blank" class="social-icon">
+                    <i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+                </a>
+
+                <a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-square-x-twitter"
+                        style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+                </a>
+            </div>
+        </div>
+
+        <h1>
+            <center><span class="page-heading-underline">HTML Form(s)</span></center>
+        </h1>
+
+
+
+        <br><br><br><br>
+
+
+
+        <p>
+            This is an interactive tool on your webpage made up of various
+            controls used to collect data from your website visitors.
+            The information is validated and then sent to a web server for
+            further processing and storage. Examples of commonly used forms
+            are sign-up forms and logins.
+        </p>
+
+
+        <br><br><br>
+
+
+        <p>An example is given below</p>
+        <br>
+        <form method="post" enctype="multipart/form-data" id="frmProspectiveEmp" autocomplete="off"
+            title="Prospective Employee Details">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p><label for="txtFirstname">FirstName<span class="required-field"></span></label><input
+                        name="txtFirstname" type="text" autofocus required id="txtFirstname" placeholder="First name"
+                        tabindex="10" title="Please type in your first name"></p>
+                <p><label for="txtLastname">LastName<span class="required-field"></span></label><input
+                        name="txtLastname" type="text" autofocus required id="txtLastname" placeholder="Last name"
+                        tabindex="10" title="Please type in your Last name"></p>
+                <p><label for="dtdBirthdate">Date of Birth<span class="required-field"></span></label><input type="date"
+                        id="dtdBirthdate" name="dtdBirthdate"></p>
+                <label>Gender<span class="required-field"></span></label>
+                <p>
+                    <input type="radio" id="gender" name="gender" value="Male"><label for="gender">Male</label>
+                </p>
+                <p>
+                    <input type="radio" id="genderly" name="gender" value="Female"><label for="genderly">Female</label>
+                </p>
+                <p>
+                    <label for="martial-status">Martial Status<span class="required-field"></span></label>
+                    <select name="martial-status" id="martial-status">
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Asexual">Asexual</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Account Details</legend>
+                <p><label for="txtUsername">Username<span class="required-field"></span></label><input
+                        name="txtUsername" type="text" required id="txtUsername" placeholder="Write Username"
+                        tabindex="62" title="Please enter a username" maxlength="20"></p>
+                <p><label for="txtPassword">Password <span class="required-field"></span></label><input
+                        name="txtPassword" type="password" required id="txtPassword" placeholder="Secret Password"
+                        tabindex="64" title="Please enter Password" maxlength="12"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p><label for="txtPhoneNo">Phone No<span class="required-field"></span></label><input type="tel"
+                        id="txtPhoneNo" name="txtPhoneNo" tabindex="70" title="Please enter your phone number"></p>
+                <p><label for="txtEmail">Email<span class="required-field"></span></label><input name="txtEmail"
+                        type="email" id="txtEmail" placeholder="you@youremail.com" tabindex="80"
+                        title="Please enter your email address"></p>
+                <label for="optCountry">Country<span class="required-field"></span></label>
+                <p>
+                    <select name="optCountry" id="optCountry" tabindex="110"
+                        title="Please select your Country"></select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Other Details</legend>
+            </fieldset>
+            <p></p>
+            <textarea name="txtABoutMe" rows="5" maxlength="500" id="txtABoutMe" placeholder="Something about me"
+                tabindex="200" title="Please tell us briefly about yourself"></textarea>
+            <p></p>
+            <input name="ffUploadCV" type="file" required id="ffUploadCV" tabindex="210"
+                title="Please upload your C.V."> Allowed files[.doc, .pdf, etc....]
+        </form>
+
+        <br><br>
+
+        <p>
+            <small>Please note that fields marked with
+                <span class="required-field">
+                </span>
+                are required.
+            </small>
+        </p>
+
+
+
+        <br><br><br>
+
+
+        <h3>Reach out to us</h3>
+        <br>
+        <ul>
+            <li>Email Us: <a href="mailto:chombz@gmail.com">chombz@gmail.com</a></li>
+            <li>Call Us: <a href="tel:+254725834659">+254 725834659</a></li>
+        </ul>
+
+
+        <br><br><br>
+
+
+        <h3>Check us out below:</h3>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.630944328617!2d36.7983513!3d-1.2846587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11132a4a26c1%3A0x59ddf5b163e84c2e!2sState%20house!5e0!3m2!1sen!2ske!4v1630016034580!5m2!1sen!2ske"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+
+
+        <br><br><br><br>
+
+
+
+
+    </div>
+
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+    <br><br>
+    <footer id="container" class="page-footer">
+        Chombz Copyright &copy;
+        <script>
+            document.write(new Date().getFullYear());
+        </script>
+    </footer>
+</body>
+</body>
+
+</html>

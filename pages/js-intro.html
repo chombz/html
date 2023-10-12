@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<!--Font Awsome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!--Font Awsome-->
+</head>
+<style>
+	body 
+	{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #f0f0f0;
+	}
+
+	#container 
+	{
+		text-align: center;
+		/* Center content inside the container */
+	}
+
+	.social-menu 
+	{
+		margin-top: 20px;
+	}
+
+	.social-icon 
+	{
+		font-size: 24px;
+		margin: 0 10px;
+		text-decoration: none;
+	}
+</style>
+
+<body>
+	<div id="container">
+		<div class="menu">
+			<div class="social-icons">
+				<a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+					class="social-icon">
+					<i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+				</a>
+
+				<a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+					target="_blank" class="social-icon">
+					<i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+				</a>
+
+				<a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+					<i class="fa-brands fa-square-x-twitter"
+						style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+				</a>
+			</div>
+		</div>
+
+		<h1 style="text-align: center;">
+			<span class="page-heading-underline">
+				JavaScript Introduction
+			</span>
+		</h1>
+
+
+		<br><br><br>
+
+
+		<p style="text-align: center;">
+			This page is an introduction to JavaScript. This is the easy side of JavaScript.
+		</p>
+
+		<br><br>
+
+		<script style="text-align: center;">
+			var username = prompt("Please enter your name", "username");
+			document.writeln("<h2>Hello <b><u>" + username + "</u></b> from JavaScript!</h2>");
+		</script>
+
+
+		<br><br><br>
+
+
+		<br><br>
+		<footer id="container" class="page-footer">
+			Chombz Copyright &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+		</footer>
+
+	</div>
+</body>
+
+</html>

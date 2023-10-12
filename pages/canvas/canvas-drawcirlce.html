@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Canvas Drawing Circles</title>
+	<link href="../../css/main.css" rel="stylesheet" type="text/css">
+	<!--Font Awsome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!--Font Awsome-->
+</head>
+
+<style>
+	body 
+	{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		/* Center horizontally */
+		align-items: center;
+		/* Center vertically */
+	}
+
+	#container 
+	{
+		text-align: center;
+		/* Center content inside the container */
+	}
+
+	.social-menu 
+	{
+		margin-top: 20px;
+	}
+
+	.social-icon 
+	{
+		font-size: 24px;
+		margin: 0 10px;
+		text-decoration: none;
+	}
+</style>
+
+<body>
+
+	<div id="container">
+		<div class="menu">
+			<div class="social-icons">
+				<a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+					class="social-icon">
+					<i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+				</a>
+
+				<a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+					target="_blank" class="social-icon">
+					<i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+				</a>
+
+				<a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+					<i class="fab fa-twitter" style="color: #000000;"></i><!-- Font Awesome Twitter Icon -->
+				</a>
+			</div>
+		</div>
+
+
+
+
+		<br><br><br><br><br>
+
+
+
+
+		<h2 class="page-heading">
+			<span class="page-heading-underline">
+			 Canvans Circles
+			</span>
+		</h2>
+
+
+
+		<br><br><br><br>
+
+
+
+		<h3 style="text-align: center;">
+			This page illustrates how to draw Circles on a HTML Canvas using JavaScript.
+		</h3>
+
+
+
+
+		<br><br><br><br><br>
+
+
+
+
+		<canvas id="my-canvas">
+			<!-- link to an external script file -->
+			<script src="../../js/canvas_drawcircle.js"></script>
+		</canvas>
+
+		<br><br><br>
+
+
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/bootstrap.js"></script>
+
+
+
+
+		<br><br><br><br><br>
+
+
+
+
+		<footer id="container" class="page-footer">
+			Chombz Copyright &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+		</footer>
+	</div>
+
+</body>
+
+</html>

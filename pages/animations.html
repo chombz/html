@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+
+	<!--demostrate CSS animation-->
+	<style>
+		/* Animate the Elememts */
+		.animated-element
+		{
+			position: relative;
+			font-weight: bolder;
+		}
+
+		/* Animate the Title */
+		h1
+		{
+			font-size: 20px;
+			animation: anim_div 5s 2;
+		}
+		/* Animate the body */
+		p
+		{
+			font-size: 16px;
+			animation: anim_body 5s 2;
+		}
+		
+		/*style the annimation keyframe*/
+		@keyframes anim_title
+		{
+			0% 
+			{
+				transform: rotate(0deg);
+				color: #fdd052;/* Default Color */
+			}
+
+			25% 
+			{
+				transform: rotate(20deg);
+				color: #FF5733;/* Change color */
+			}
+
+			50% 
+			{
+				transform: rotate(0deg);
+				color: #fdd052;
+			}
+
+			70% 
+			{
+				transform: rotate(0deg);
+				background-color: #088fc9;
+			}
+		}
+
+			/*style the animation keyframe*/
+		@keyframes anim_body
+		{
+			0% 
+			{
+				transform: rotate(0deg);
+				color: #fdd052;/* Default Color */
+			}
+
+			25% 
+			{
+				transform: rotate(20deg);
+				color: #FF5733;/* Change color */
+			}
+
+			50% 
+			{
+				transform: rotate(0deg);
+				color: #fdd052;
+			}
+
+			70% 
+			{
+				transform: rotate(0deg);
+				background-color: #088fc9;
+			}
+		}
+	</style>
+</head>
+
+
+
+<body>
+
+	<h1>
+		<span class="page-heading-underline">
+			CSS Aninations
+		</span>
+	</h1>
+	
+
+
+	<br><br><br><br>
+
+
+
+	<p>
+		It's the process of changing an element's property over
+		a given duration without the need for JS. You can change an elemnt's size,
+		colour location of the screen and even rotate it to name a lew.
+		To create a CSS Animatiion, you need properties to be animated
+		and keyframes which defined how hthe animated element will displayed at a given time
+	</p>
+
+
+
+	<br><br><br><br>
+
+
+
+    <br><br>
+    <footer id="container" class="page-footer">
+        Chombz Copyright &copy;
+        <script>
+            document.write(new Date().getFullYear());
+        </script>
+    </footer>
+</body>
+</body>
+
+</html>

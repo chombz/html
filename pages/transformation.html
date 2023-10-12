@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Transformation</title>
+  <link href="../css/main.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Font Awesome -->
+  <style>
+    /* Reset default margin and padding for the body and html elements */
+    body,
+    html 
+    {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Set up a flex container to center content vertically and horizontally */
+    body 
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Style the transformation */
+    #container 
+    {
+      text-align: center;
+      /* Center-align the entire container */
+      padding: 20px;
+      /* Add padding to create space around content */
+    }
+
+    #transformation 
+    {
+      width: 200px;
+      /* Increase the size of the transformation */
+      height: 200px;
+      /* Make it a square */
+      background-color: #f00;
+      transition: all 2s ease-out;
+      margin-top: 20px;
+      /* Add some space below the paragraph */
+    }
+
+    #transformation:hover 
+    {
+      background-color: #f80;
+      transform: rotate(45deg);
+    }
+
+    .btn 
+    {
+      background: #82E429;
+      color: #E70B48;
+      transition: all 1s ease-out;
+    }
+
+    .page-footer 
+    {
+      margin-top: 20px;
+      /* Add space between the transformation and footer */
+      text-align: center;
+      /* Center-align text in the footer */
+    }
+    #container 
+    {
+        text-align: center; /* Center content inside the container */
+    }
+
+    .social-menu 
+	{
+		margin-top: 20px;
+	}
+
+    .social-icon 
+	{
+		font-size: 24px;
+		margin: 0 10px;
+		text-decoration: none;
+	}
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="menu">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank" class="social-icon">
+          <i class="fab fa-facebook" style="color: #0f58d7;"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube" target="_blank"
+          class="social-icon">
+          <i class="fab fa-youtube" style="color: #fd1c1c;"></i>
+        </a>
+
+        <a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+          <i class="fab fa-twitter-square" style="color: #000000;"></i>
+        </a>
+      </div>
+    </div>
+
+
+    
+    <!-- Center the title -->
+    <h1>
+      <span class="page-heading-underline">CSS Transformation</span>
+    </h1>
+
+
+    <br><br><br>
+
+
+    <p>
+      A transformation is a way of rotating, scaling, skewing, or 
+      translating an element. Transformations let you change an element's 
+      size, shape, and position. Kindly hover over the red square below 
+      for an example.
+    </p>
+
+
+
+    <br><br><br><br><br>
+
+
+    
+
+    <!-- Center and enlarge the transformation -->
+    <div id="transformation"></div>
+
+
+
+    <br><br><br><br><br>
+
+
+    
+
+  <br><br>
+  <footer id="container" class="page-footer">
+      Chombz Copyright &copy;
+      <script>
+          document.write(new Date().getFullYear());
+      </script>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* Mobile CSS Document to be used for the devices with minimum 
+screen width of 480px. */
+
+/*use a backgroumd color for tablet devices*/
+body
+{
+	 background-color:#2991E7;
+	 baground-size:cover;
+	 background-attechment:fixed;
+	 background-position:top center;
+}
+
+/*Rule to have 2 images wide by side*/
+
+.responsive-image
+{
+	width:48%;
+	display:inline-flex;
+	margin:1px 2px;
+}

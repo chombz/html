@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Font Awsome-->
+    <style>
+        /* Add custom CSS styles for better appearance */
+        label 
+        {
+            font-weight: bold;
+        }
+
+        .form-group 
+        {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea 
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] 
+        {
+            background-color: #ff8800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover 
+        {
+            background-color: #73c01c;
+        }
+
+        .required-field::before 
+        {
+            content: "*";
+            color: red;
+        }
+
+        #container 
+        {
+            text-align: center;
+            /* Center content inside the container */
+        }
+
+        .social-menu 
+        {
+            margin-top: 20px;
+        }
+
+        .social-icon 
+        {
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="menu">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+                    class="social-icon">
+                    <i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+                </a>
+
+                <a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+                    target="_blank" class="social-icon">
+                    <i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+                </a>
+
+                <a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-square-x-twitter"
+                        style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+                </a>
+            </div>
+        </div>
+
+
+        <h1><span class="page-heading-underline">Contact Us</span></h1>
+
+
+
+        <br><br><br><br>
+
+
+
+        <p>This page illustrates how to create a contact us page</p>
+
+        <br><br>
+
+        <p>Need Games? Get in contact with us below</p>
+
+        <form id="frmContact" name="form1" method="post">
+            <div class="form-group">
+                <label for="txtNames">Name <span class="required-field"></span>:</label>
+                <input name="txtNames" type="text" required="required" id="txtNames" placeholder="Your Name"
+                    tabindex="10" title="Please enter your name" autocomplete="on" />
+            </div>
+
+            <div class="form-group">
+                <label for="txtEmail">Email <span class="required-field"></span>:</label>
+                <input name="txtEmail" type="text" required="required" id="txtEmail" placeholder="mymail@me.com"
+                    tabindex="20" title="Please enter your email" autocomplete="on" />
+            </div>
+
+            <div class="form-group">
+                <label for="txtMessage">Message <span class="required-field"></span>:</label>
+                <textarea name="txtMessage" rows="5" maxlength="500" required id="txtMessage" placeholder="Your Message"
+                    tabindex="30" title="Please enter your message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input name="btnSubmit" type="submit" class="btnsubmit" id="btnSubmit" tabindex="40" title="Send Form"
+                    value="Submit">
+            </div>
+        </form>
+
+        <p><small>Please note that fields marked with <span class="required-field"></span> are required.</small></p>
+
+
+
+        <br><br><br><br>
+
+
+
+        <br><br>
+        <footer id="container" class="page-footer">
+            Chombz Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* Social Media CSS document to add the various social media icons in our webpages */
+
+/*We find the source URL and add the corret social media icon */
+.social-menu li ai:before
+{
+	content:'\f08e';
+}
+
+/* Code for the URL and its icons*/
+.social-menu li a[href*="facebook.com"]::before{content:'\f09a';}
+.social-menu li a[href*="youtube.com"]::before{content:'\f167';}
+.social-menu li a[href*="twitter.com"]::before{content:'\f099';}
+.social-menu li a[href*="linkedin.com"]::before{content:'\f0e1';}
+
+
+
+
+/*Code to hise the social media text*/
+.screen-reader-text{
+	clip: rect(1px, 1px, 1px,1px);
+	position:absolute;
+	height:1px;
+	width:1px;
+	overflow:hidden;
+}
+

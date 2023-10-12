@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Transitions</title>
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- Font Awesome -->
+
+	<style>
+		body 
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			margin: 0;
+		}
+
+		#container 
+		{
+			text-align: center;
+		}
+
+		#transformation 
+		{
+			width: 150px;
+			height: 100px;
+			background-color: #f00;
+			transition: all 2s ease-out;
+			margin-bottom: 20px;
+			/* Add margin to separate transformation from buttons */
+		}
+
+		#transformation:hover 
+		{
+			background-color: #f80;
+			transform: skew(-45deg, 10deg);
+		}
+
+		.btn 
+		{
+        	background: #00a5ff;
+        	color: #AC2123;
+        	transition: all 0.5s ease-out;
+        	margin: 10px;
+    	}
+
+    	.btn:hover 
+		{
+        	background-color: #E55A1B;
+        	transform: scale(4);
+    	}
+
+		.page-heading-underline 
+		{
+			border-bottom: 1px solid #000;
+			/* Add an underline to the page heading */
+		}
+
+		.page-footer 
+		{
+			margin-top: 20px;
+			/* Add margin to separate footer from content */
+		}
+
+		#container 
+		{
+			text-align: center;
+			/* Center content inside the container */
+		}
+
+		.social-menu 
+		{
+			margin-top: 20px;
+		}
+
+		.social-icon 
+		{
+			font-size: 24px;
+			margin: 0 10px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<div class="menu">
+			<div class="social-icons">
+				<a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+					class="social-icon">
+					<i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+				</a>
+
+				<a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+					target="_blank" class="social-icon">
+					<i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+				</a>
+
+				<a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+					<i class="fa-brands fa-square-x-twitter"
+						style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+				</a>
+			</div>
+		</div>
+
+		<h1>
+			<span class="page-heading-underline">
+				CSS Transitions
+			</span>
+		</h1>
+
+
+		<br><br><br>
+
+
+		<p>
+			A smooth way of providing a change of a given CSS property over
+			a given duration. Kindly hover your mouse over the red square
+			or button to see an example of a CSS transition.
+		</p>
+
+
+
+		<br><br><br><br><br>
+
+
+
+
+		<div id="transformation"></div>
+
+		<br><br>
+
+		<button class="btn">Button 1</button>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		<button class="btn">Button 2</button>
+
+
+
+		<br><br><br><br><br>
+
+
+
+
+		<br><br>
+		<footer id="container" class="page-footer">
+			Chombz Copyright &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+		</footer>
+	</div>
+</body>
+
+</html>

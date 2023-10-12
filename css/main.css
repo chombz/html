@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+
+
+/*We want to reset tthe default browser margin and padding*/
+/* Using the custom properties to style elements */
+.navbar 
+{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.navbar:hover 
+{
+    background-color: var(--hover-color);
+}
+
+/* Example usage of --dark */
+.dark-text 
+{
+    color: var(--dark);
+}
+
+
+*, *::before, *::after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Style the body */
+body
+{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	color:rgb(195, 100, 4);
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 16px; 
+}
+
+
+/*Style the Background Image*/
+
+body
+	{
+		padding:0;
+		margin:0;
+		background-image:url(../images/bkgd_4.jpg);
+		background-size:cover;
+	}
+
+
+/* Style the page headings using a class 
+selector */
+.page-heading
+{
+	text-align:center;
+	font-weight: 800;
+	font-size: 2.2cm;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+
+.page-heading-underline {border-bottom: double medium #f00;}  
+/* Style the the container div using an id selector */ 
+#container 
+{
+	    margin: 0 auto;    
+		background-color:rgba(0,0,0,0.70);    
+		padding-left: 2%;    
+		padding-right: 2%; 
+}
+
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/*Add prie tag*/
+.price:after
+{
+	content:'Kes. ';
+}
+
+.price:before
+{
+	content:'/=';
+}
+
+
+
+
+/*Style the image gallery*/
+.image-gallery
+{
+	width:100%;
+	height:auto;
+	vertical-align:middle;
+}
+
+
+
+
+
+/*Arragement of images*/
+.description
+{padding:15px;}
+
+.responsive-image
+{ border: solid 3px #6BB0F9; }
+
+
+
+
+/*Style the footer*/
+.page-footer
+{
+	text-align:center;
+	color:#FCB8E2;
+	text-decoration:none;
+}
+
+
+
+
+/*Style the section*/
+.section-heading
+{
+	text-align:center;
+	font-size:1.2cm;
+	font-weight:800;
+	letter-spacing:2px;
+	color:#2FD04C;
+	font-family: lobster_stylesheet;
+	list-style-type:none;
+}
+	
+	
+
+/*Style your table*/
+.data-table
+{
+	margin-left:auto;
+	margin-right:auto;
+	border:3px;
+}
+
+/*Style the odd and even rows differently*/
+.data-table tr:nth-child(odd)
+{ background-color:#F8F700; }
+
+.data-table tr:nth-child(even)
+{ background-color:#0A34FB; }
+
+/*Style the first row in the table diffrently*/
+.data-table tr:first child
+{
+	background-color:rgba(56,240,249,0.52);
+	text-align:center;
+	font-weight:800;
+	font-size:1.2cm;
+}
+
+
+/* Style the form*/
+form
+{
+	font-size: 20px;
+	font-weight: 600;
+	color: #FFF;
+	left: 1px;
+}
+
+/*Style the form field set*/
+
+form fieldset 
+{
+	background-color: #000000;
+	border: 2px inset #BC6F3A;
+}
+
+/* Style the form's required field*/
+
+.required-field
+{
+	color:#000000;
+	font-weight:bolder;
+	font-size: 1.4em;
+}
+
+/*Style the form lables*/
+
+form label
+{
+	margin: 4px 0px;
+	text-align:inherit;
+}
+
+/*style submit button*/
+
+.btnsubmit
+{
+	color:royalblue;
+	font-weight:bolder;
+	text-align: center;
+	align-content: center;
+	font-size: 1.4em;
+	background-color: darkred;
+	outline-style: groove;
+	
+}
+
+
+
+/* Design the social media icons */
+.menu 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the icons horizontally */
+  font-size: 2rem; /* Increase the font size for larger icons */
+}
+
+.menu li 
+{
+  list-style: none;
+}
+
+.menu li a 
+{
+  display: block;
+  text-decoration: none;
+  color: var(--light);
+  padding: 1em 1.5em;
+}
+
+
+
+
+/*Design the Navigation*/
+.li
+{
+	list-style-type: none;
+}
+
+
+.a
+{
+	text-decoration: none;
+}
+
+
+.nav
+{
+	width: 100;
+	background-color: crimson;
+}
+
+
+.ul
+{
+	margin: 0;
+	padding: 0;
+	
+	/*This option by default dispose the elements in a row*/
+	
+	display: flex;
+}
+
+
+.nav body
+{
+	margin: 0;
+}
+
+
+
+/* Style for video container */
+.video-container 
+{
+	text-align: center;
+  }
+  
+  .medium-box 
+  {
+	width: 70%; /* Adjust the width as needed */
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  /* Style for audio container */
+  .audio-container 
+  {
+	text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

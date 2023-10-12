@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Images</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Font Awsome-->
+    <style>
+        /* Add CSS styles for image alignment and sizing */
+        .image-gallery 
+        {
+            text-align: center;
+        }
+
+        .image-gallery img 
+        {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-gallery figure 
+        {
+            max-width: 200px;
+            /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .image-gallery figcaption 
+        {
+            text-align: center;
+        }
+        #container 
+	{
+		text-align: center;
+		/* Center content inside the container */
+	}
+
+	.social-menu 
+	{
+		margin-top: 20px;
+	}
+
+	.social-icon 
+	{
+		font-size: 24px;
+		margin: 0 10px;
+		text-decoration: none;
+	}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="container">
+            <div class="menu">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+                    </a>
+
+                    <a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube"
+                        target="_blank" class="social-icon">
+                        <i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+                    </a>
+
+                    <a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-square-x-twitter"
+                            style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+                    </a>
+                </div>
+            </div>
+
+            <h1><span class="page-heading-underline">HTML Images</span></h1>
+
+
+
+            <br><br><br><br>
+
+
+
+            <p>
+                HTML Images are going to give your Web page some life. 
+                Here below are some Images of Desserts.
+            </p>
+
+
+
+            <br><br><br><br>
+
+
+
+            <!-- Desserts Parlor -->
+            <h2>Desserts Parlor</h2>
+
+            <br><br>
+
+            <!-- Cakes -->
+            <h3>Cakes</h3>
+            <br>
+            <div class="responsive-image">
+                <figure class="image-gallery">
+                    <img src="../images/cakes/mint_party_cake.jpg" alt="Mint Cake">
+                    <figcaption>
+                        <br>
+                        <p>Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget
+                            neque at sem venenatis eleifend.</p>
+                        <p>Price: 450</p>
+                    </figcaption>
+                </figure>
+            </div>
+            
+
+            <br><br><br>
+
+
+            <div class="responsive-image">
+                <figure class="image-gallery">
+                    <img src="../images/cakes/assorted_cakes.jpg" alt="Assorted Cakes">
+                    <figcaption>
+                        <br>
+                        <p>Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget
+                            neque at sem venenatis eleifend.</p>
+                        <p>Price: 500</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+
+        <script>
+            // JavaScript to update the current year automatically
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
+
+
+        <br><br>
+        <footer id="container" class="page-footer">
+            Chombz Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* Mobile CSS Document to be used for the devices with maximum 
+screen width of 480px.*/
+
+/*use a backgroumd color for mobile devices*/
+body
+{
+	background-color:#F01418;
+}
+
+#container
+{
+	height: 100%;
+}
+
+/*design mobile page*/
+form textarea, input[type="text"], input[type="password"], input[type="email"],input[type="date"],inout[type="tel"], form select
+{}
+	

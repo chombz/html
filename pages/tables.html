@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Tables</title>
+  <link href="../css/main.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <style>
+    body 
+    {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      text-align: center;
+    }
+
+    #container 
+    {
+      text-align: center;
+      /* Center content inside the container */
+    }
+
+    .social-menu 
+    {
+      margin-top: 20px;
+    }
+
+    .social-icon 
+    {
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    h1 
+    {
+      margin-top: 50px;
+      /* Add some space above the title */
+    }
+
+    table 
+    {
+      margin: 0 auto;
+      /* Center the table horizontally */
+    }
+
+    .page-footer 
+    {
+      margin-top: 50px;
+      /* Add some space above the footer */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="container">
+      <div class="menu">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/zuck" title="Follow Owner on Facebook" target="_blank" class="social-icon">
+            <i class="fab fa-facebook" style="color: #0f58d7;"></i> <!-- Font Awesome Facebook Icon -->
+          </a>
+
+          <a href="https://www.youtube.com/@MrBeast/videos" title="Subscribe to the King of Youtube" target="_blank"
+            class="social-icon">
+            <i class="fab fa-youtube" style="color: #fd1c1c;"></i> <!-- Font Awesome YouTube Icon -->
+          </a>
+
+          <a href="https://twitter.com/elonmusk" title="Follow the Owner" target="_blank" class="social-icon">
+            <i class="fa-brands fa-square-x-twitter"
+              style="color: #000000;"></i><!-- Font Awesome Twitter x Icon --></i>
+          </a>
+        </div>
+      </div>
+
+
+      <h1><span class="page-heading-underline">HTML Tables</span></h1>
+
+
+      <br><br><br>
+
+
+      <p>
+        This is a Grid of rows and columns. Rows span from left to right,
+        while columns span from top to bottom.
+        An intersection between a row and a columns is called a cell.
+      </p>
+
+      <br><br>
+
+      <p>An Example given below; </p>
+      <br>
+      <p>Student Details Table</p>
+
+      <table width="200" border="1">
+        <tbody>
+          <tr>
+            <td>Student Number</td>
+            <td>Student Name</td>
+            <th>Home Location</th>
+          </tr>
+
+
+          <tr>
+            <td>S001</td>
+            <td>Micheal Machuria</td>
+            <td>Ngong</td>
+          </tr>
+
+
+          <tr>
+            <td>S002</td>
+            <td>Frankline Mutai</td>
+            <td>Kericho</td>
+          </tr>
+
+
+          <tr>
+            <td>S003</td>
+            <td>Fahid Madid</td>
+            <td>Eastleight</td>
+          </tr>
+
+
+          <tr>
+            <td>S004</td>
+            <td>Edwin Chomba</td>
+            <td>Nairobi</td>
+          </tr>
+
+
+          <tr>
+            <td>S005</td>
+            <td>Carlos Tubebe</td>
+            <td>Barara</td>
+          </tr>
+
+
+          <tr>
+            <td>S005</td>
+            <td>Suhab Ahmed</td>
+            <td>South C</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
+      <footer class="page-footer">
+        Chombz Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </footer>
+</body>
+
+</html>
